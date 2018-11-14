@@ -96,7 +96,7 @@ def load_data(city, month, day):
     return df
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays statistics on the most frequent times of travel. It includes month, week and hour."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -188,7 +188,7 @@ def user_stats(df):
 def raw_data(df, line_no):
     """Display filtered data."""
     while True:
-        view_data = input('Do you want to see raw data? Enter yes or no. \n>').lower()
+        view_data = input('Would you like to see raw data? Enter yes or no. \n>').lower()
         count = df['Start Time'].count()
         if view_data.lower() == 'yes':
             if count <= line_no:
