@@ -27,7 +27,7 @@ def load_data(city, month, day):
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Welcome to Bikeshare program! Let\'s explore some data together! Are you ready?')
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
