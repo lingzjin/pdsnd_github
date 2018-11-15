@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': '/Users/king/Documents/Workhard/bikeshare-2/chicago.csv
 
 CITIES = ['chicago', 'new york city', 'washington']
 
-MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'all']
 
 DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', \
         'thursday', 'friday', 'saturday', 'all']
@@ -27,7 +27,7 @@ def load_data(city, month, day):
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Welcome to Bikeshare program! Let\'s explore some data together! Are you ready?')
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
@@ -46,6 +46,12 @@ def load_data(city, month, day):
             break
         else:
             print('Sorry, I do not understand your input. Please input again.')
+
+    while True:
+            print('Sorry, I do not understand your input.')
+
+    while True:
+            print('Sorry, I do not understand your input.')
 
     while True:
         day = input('Please enter the day of the week or just say \'all\' again to apply no day filter \n>').lower()
@@ -85,7 +91,7 @@ def load_data(city, month, day):
    # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
+        months = ['January', 'February', 'March', 'April', 'May', 'June']
         month = months.index(month) + 1
         df = df[df['month'] == month]
    # filter by day of week if applicable
@@ -97,6 +103,10 @@ def load_data(city, month, day):
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel. It includes month, week and hour."""
+
+    """Displays statistics on the most frequent times of travel."""
+
+    """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -189,6 +199,10 @@ def raw_data(df, line_no):
     """Display filtered data."""
     while True:
         view_data = input('Would you like to see raw data? Enter yes or no. \n>').lower()
+    while True:
+        view_data = input('Do you want to see raw data? Enter yes or no. \n>').lower()
+    while True:
+        view_data = input('Do you want to see raw data? Enter yes or no. \n>').lower()
         count = df['Start Time'].count()
         if view_data.lower() == 'yes':
             if count <= line_no:
